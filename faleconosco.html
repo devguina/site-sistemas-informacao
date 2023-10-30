@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+</head>
+<body>
+
+    <ul type="disk">
+        <li><a href="index.html">Pagina Inicial</a>                </li>
+        <li><a href="galeria.html" rel="prev">Galeria</a></li>
+        <li><a href="faleconosco.html">Fale Conosco</a></li>
+        <li>Sistema de Informações</li>
+            <ol type="I">
+                    <li>Alta Gerência</li>
+                            <ul type="circle">
+                                <li><a href="sae.html" rel="next">SAE</a></li>
+                                <li><a href="sad.html">SAD</a></li>
+                            </ul>
+                    <li>Gerência Intermediária</li>
+                            <ul type="circle">
+                                <li><a href="sig.html">SIG</a></li>
+                            </ul>
+                    <li>Área Operacional</li>
+                            <ul type="circle">
+                                <li><a href="operacionais.html">Operacionais</a></li>
+                                <li><a href="estruturados.html">Estrutura</a></li>
+                            </ul>
+                        </ol>
+</ul>
+
+        <p>Caso tenha alguma dúvida e deseja obter respostas ou falar conosco, o formulário a baixo deverá ser preenchido.br <br>
+        Assim altomáticamente sua conta será criada no site, assim você consegue acompanhar quando foi respondido pois será enviado um e-mail lhe informando que lhe respondemos!</p>
+
+        <p>Todas as informações preenchidas aqui serão usadas caso você esqueça a senha, para poder recuperar a senha será feito uma validação de dados, então não preencha de qualquer maneira o formulário!</p>
+        <form>
+    <fieldset>
+            <legend>Assunto da sua dúvida/e-mail para retorno/data de nascimento/senha</legend>
+            <p><label for="idTexto">Assunto:</label><input type="text" name="nTexto" id="idTexto" size="40" placeholder="Assunto da sua dúvida"></p>
+            <p><label for="idEmail">E-mail:</label><input type="email" name="nEmail" id="idEmail" placeholder="exemplo01@gmail.com"></p>
+            <p><label for="idData">Data:</label><input type="date" name="nData" id="idData"></p>
+            <p><label for="idSenha">Senha:</label><input type="password" name="nSenha" id="idSenha"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Genêro/</legend>
+        <label for="id1">Seu Genêro</label><br><input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 1" id="id1"><label
+            for="id1">Homem</label>
+        <input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 2" id="id2"><label for="id2">Mulher</label>
+        <input type="radio" name="IgualParaTodosOsRadioDeUmaMesmaEntrada" value="Opção 3" id="id3"><label for="id3">Outro</label>
+        <br>
+        <br>
+        <label for="idNum">Número da Sorte (1 a 100)</label><br><input type="number" name="nNum" id="idNum" min="0" max="100">
+        <br>
+        <br>
+        <label for="idSelecao">Qual a área que você estuda?</label><br>
+        <select name="nSelecao" id="idSelecao">
+            <option value="Coisa 1">S.I</option>
+            <option value="Coisa 2">Engenharia de Software</option>
+            <option value="Coisa 3">Ciências da Computação</option>
+            <option value="Coisa 4">Gestçao de T.I</option>
+            <option value="Coisa 5">Engenharia de Computação</option>
+            <option value="Coisa 6">Outro</option>
+
+        </select>
+        <br>
+        <br>    
+        <label for="idRange">Avaliando nosso conteudo</label><br><input type="range" min="1" max="10" name="nRange" id="idRange">
+        <br>
+        <br>
+        <label for="idCaixa">Digite detalhadamente sobre o assunto na qual você tem dúvidas:</label><br><textarea type="text" cols="50" rows="10" placeholder="Digite aqui" name="nCaixa" id="idCaixa"></textarea><br>
+    </fieldset>
+</form>
+    
+</body>
+</html>
